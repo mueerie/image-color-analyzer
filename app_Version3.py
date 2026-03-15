@@ -6,7 +6,7 @@ import pandas as pd
 st.title("图片主色分析+Pantone色号查询")
 uploaded_file = st.file_uploader("上传图片", type=["jpg", "png"])
 
-pantone_data = pd.read_csv("pantone-list.csv")
+pantone_data = pd.read_csv("pantone-list_Version2.csv")
 
 def closest_pantone(rgb, pantone_list):
     min_dist = float('inf')
